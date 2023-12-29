@@ -327,7 +327,7 @@
         </div>
     </nav>
     @else
-    <div class="navbar-fixed-top">
+    <div id="main-nav" class="navbar-fixed-top">
         <nav class="container d-flex flex-wrap justify-content-center py-3">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                 <img class="header-logo" src="{{ asset('/images/202212261023139b266e.png') }}" alt="brand logo">
