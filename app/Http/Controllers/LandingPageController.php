@@ -8,33 +8,74 @@ class LandingPageController extends Controller
 {
     public function home()
     {
-        return view('pages.home')->with('pageTitle', 'Home');
+        $seo = [
+            'page_title' => '',
+            'meta_title' => 'Sukgarden',
+            'meta_desc' => 'SukGarden is the leading brand of ecological home cleaning. Product research and development selected global natural active ingredients, aiming to produce green, healthy, ecological and environmentally friendly cleaning and toiletry products. ',
+            'meta_image' => asset('/images/2023091815305860bfc6.jpg'),
+        ];
+
+        return view('pages.home')->with($seo);
     }
 
     public function ourStory()
     {
-        return view('pages.our-story')->with('pageTitle', 'Our Story');
+        $seo = [
+            'page_title' => '',
+            'meta_title' => 'Sukgarden',
+            'meta_desc' => 'SukGarden is the leading brand of ecological home cleaning. Product research and development selected global natural active ingredients, aiming to produce green, healthy, ecological and environmentally friendly cleaning and toiletry products. ',
+            'meta_image' => asset('/images/2023091815305860bfc6.jpg'),
+        ];
+
+        return view('pages.our-story')->with($seo);
     }
 
     public function ourProduct()
     {
-        return view('pages.our-product')->with([
-            'pageTitle' => 'Our Product'
-        ]);
+        $seo = [
+            'page_title' => '',
+            'meta_title' => 'Sukgarden',
+            'meta_desc' => 'SukGarden is the leading brand of ecological home cleaning. Product research and development selected global natural active ingredients, aiming to produce green, healthy, ecological and environmentally friendly cleaning and toiletry products. ',
+            'meta_image' => asset('/images/2023091815305860bfc6.jpg'),
+        ];
+
+        return view('pages.our-product')->with($seo);
     }
 
     public function contactUs()
     {
-        return view('pages.contact-us')->with('pageTitle', 'Contact Us');
+        $seo = [
+            'page_title' => '',
+            'meta_title' => 'Sukgarden',
+            'meta_desc' => 'SukGarden is the leading brand of ecological home cleaning. Product research and development selected global natural active ingredients, aiming to produce green, healthy, ecological and environmentally friendly cleaning and toiletry products. ',
+            'meta_image' => asset('/images/2023091815305860bfc6.jpg'),
+        ];
+
+        return view('pages.contact-us')->with($seo);
     }
 
     public function getNews()
     {
-        return view('pages.news')->with('pageTitle', 'News');
+        
+        $seo = [
+            'page_title' => '',
+            'meta_title' => 'Sukgarden',
+            'meta_desc' => 'SukGarden is the leading brand of ecological home cleaning. Product research and development selected global natural active ingredients, aiming to produce green, healthy, ecological and environmentally friendly cleaning and toiletry products. ',
+            'meta_image' => asset('/images/2023091815305860bfc6.jpg'),
+        ];
+
+        return view('pages.news')->with($seo);
     }
 
     public function showNews($id)
     {
-        return view('pages.news-detail')->with('pageTitle', 'News');
+        $seo = [
+            'page_title' => '',
+            'meta_title' => 'Sukgarden',
+            'meta_desc' => 'SukGarden is the leading brand of ecological home cleaning. Product research and development selected global natural active ingredients, aiming to produce green, healthy, ecological and environmentally friendly cleaning and toiletry products. ',
+            'meta_image' => asset('/images/2023091815305860bfc6.jpg'),
+        ];
+        
+        return view('pages.news-detail')->with($seo);
     }
 }

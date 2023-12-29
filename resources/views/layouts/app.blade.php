@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>SukGarden - {{ $pageTitle }}</title>
+    <title>SukGarden - {{ $page_title }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="title" content="{{ $meta_title }}" />
+    <meta name="description" content="{{ $meta_desc }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ $meta_title }}" />
+    <meta property="og:description" content="{{ $meta_desc }}" />
+    <meta property="og:image" content="{{ $meta_image }}" />
+    <meta property="og:site_name" content="Sukgarden" />
+    <meta property="og:locale" content="en_US" />
+    
     <link rel="icon" type="image/x-icon" href="/images/timeline/2015.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -276,12 +286,52 @@
             font-size: 12px;
         }
     </style>
-    <div id="main-nav" class="navbar-fixed-top">
+    @if(preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]))
+    <nav class="navbar navbar-expand-lg sticky-top bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img class="header-logo" src="{{ asset('/images/202212261023139b266e.png') }}" alt="brand logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('landing-page.our-story') }}">
+                            Our Story
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('landing-page.our-product') }}">
+                            Product
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('landing-page.news') }}">
+                            Brand News
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('landing-page.contact-us') }}">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    @else
+    <div class="navbar-fixed-top">
         <nav class="container d-flex flex-wrap justify-content-center py-3">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <img class="header-logo" src="//cdn.img-sys.com/comdata/101528/202212/202212261023139b266e.png">
+                <img class="header-logo" src="{{ asset('/images/202212261023139b266e.png') }}" alt="brand logo">
             </a>
-            @if(!preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]))
             <ul class="nav">
                 <li><a href="/" class="nav-link px-2 ms-3 link-dark">Home</a></li>
                 <li><a href="{{ route('landing-page.our-story') }}" class="nav-link px-2 ms-3 link-dark">Our Story</a></li>
@@ -289,10 +339,12 @@
                 <li><a href="{{ route('landing-page.news') }}" class="nav-link px-2 ms-3 link-dark">Brand News</a></li>
                 <li><a href="{{ route('landing-page.contact-us') }}" class="nav-link px-2 ms-3 link-dark">Contact Us</a></li>
             </ul>
-            @endif
         </nav>
     </div>
-    @yield('content')
+    @endif
+    <main>
+        @yield('content')
+    </main>
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-6 d-flex align-items-center">

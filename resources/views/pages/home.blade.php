@@ -12,7 +12,7 @@
                 <img src="{{ asset('images/2023091815305860bfc6.jpg') }}" class="d-block w-100" alt="design of laundry beads with flower">
             </div>
             <div class="carousel-item"  data-bs-interval="5000">
-                <img src="{{ asset('images/20230809114317019dc7.jpg') }}" class="d-block w-100" alt="Gu Ai Ling Endorse our brand">
+                <img class="pt-5 img-fluid" src="{{ asset('images/20230809114317019dc7.jpg') }}" class="d-block w-100" alt="Gu Ai Ling Endorse our brand">
             </div>
             <div class="carousel-item"  data-bs-interval="5000">
                 <h2 class="d-none">
@@ -51,16 +51,22 @@
         <h3>Top Sales Product of SukGarden</h3>
         <img src="{{ asset('/images/2022102410184329134e.png') }}" alt="icon">
     </div>
-    <div class="d-flex">
-        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sukgarden077/video/7304505887941463314" data-video-id="7304505887941463314" style="max-width: 605px;min-width: 325px;" > 
-            <section> </section> 
-        </blockquote> 
-        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sukgarden077/video/7314603256070638849" data-video-id="7314603256070638849" style="max-width: 605px;min-width: 325px;" > 
-            <section></section> 
-        </blockquote> 
-        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sukgarden077/video/7314948695496215809" data-video-id="7314948695496215809" style="max-width: 605px;min-width: 325px;" > 
-            <section></section> 
-        </blockquote>
+    <div class="row">
+        <div class="col-sm-12 col-lg-4">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sukgarden077/video/7304505887941463314" data-video-id="7304505887941463314" style="max-width: 605px;min-width: 325px;" > 
+                <section> </section> 
+            </blockquote> 
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sukgarden077/video/7314603256070638849" data-video-id="7314603256070638849" style="max-width: 605px;min-width: 325px;" > 
+                <section></section> 
+            </blockquote> 
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sukgarden077/video/7314948695496215809" data-video-id="7314948695496215809" style="max-width: 605px;min-width: 325px;" > 
+                <section></section> 
+            </blockquote>
+        </div>
     </div>
     <div class="text-center">
         <a href="{{ route('landing-page.our-product') }}" class="btn btn-light btn-lg">View More</a>
