@@ -7,13 +7,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="3000">
                 <h1 class="d-none">
-                    SukGarden
-                </h1>
-                <h1 class="d-none">
-                    SukGarden
-                </h1>
-                <h1 class="d-none">
-                    Last year, a staggering one billion laundry beads were sold across 30 countries, adding a touch of cleanliness to households worldwide.
+                    SukGarden, a staggering one billion laundry beads were sold across 30 countries, adding a touch of cleanliness to households worldwide.
                 </h1>
                 <img src="{{ asset('images/2023091815305860bfc6.jpg') }}" class="d-block w-100" alt="design of laundry beads with flower">
             </div>
@@ -21,15 +15,13 @@
                 <img src="{{ asset('images/20230809114317019dc7.jpg') }}" class="d-block w-100" alt="Gu Ai Ling Endorse our brand">
             </div>
             <div class="carousel-item"  data-bs-interval="5000">
-                <h1 class="d-none">
-                    Master FragranceNatural Cleanliness
-                </h1>
-                <h1 class="d-none">
-                    Together with internationalfragrance giantGivaudan, every scentcomes from nature.
-                </h1>
-                <h1 class="d-none">
-                    No harmfulingredients,safe for your family's health
-                </h1>
+                <h2 class="d-none">
+                    Master Fragrance Natural Cleanliness
+                    Together with international fragrance giant Givaudan, every scentcomes from nature.
+                </h2>
+                <h2 class="d-none">
+                    No harmful ingredients,safe for your family's health
+                </h2>
                 <img src="{{ asset('images/20230918140837d49d44.jpg') }}" class="d-block w-100" alt="essential oil detergent">
             </div>
         </div>
