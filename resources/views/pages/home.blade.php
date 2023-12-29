@@ -12,13 +12,16 @@
                 <h1 class="d-none">
                     SukGarden
                 </h1>
-                <img src="{{ asset('images/2023091815305860bfc6.jpg') }}" class="d-block w-100" alt="...">
+                <h1 class="d-none">
+                    Last year, a staggering one billion laundry beads were sold across 30 countries, adding a touch of cleanliness to households worldwide.
+                </h1>
+                <img src="{{ asset('images/2023091815305860bfc6.jpg') }}" class="d-block w-100" alt="design of laundry beads with flower">
             </div>
             <div class="carousel-item"  data-bs-interval="5000">
-                <img src="{{ asset('images/20230809114317019dc7.jpg') }}" class="d-block w-100" alt="...">
+                <img src="{{ asset('images/20230809114317019dc7.jpg') }}" class="d-block w-100" alt="Gu Ai Ling Endorse our brand">
             </div>
             <div class="carousel-item"  data-bs-interval="5000">
-                <img src="{{ asset('images/20230918140837d49d44.jpg') }}" class="d-block w-100" alt="...">
+                <img src="{{ asset('images/20230918140837d49d44.jpg') }}" class="d-block w-100" alt="essential oil detergent">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -35,7 +38,7 @@
 <section class="section text-center mb-4">
     <h3>Brand Introduction</h3>
     <div>
-        <img src="//cdn.img-sys.com/comdata/101528/202210/2022102410184329134e.png" data-src="//cdn.img-sys.com/comdata/101528/202210/2022102410184329134e.png">
+        <img src="{{ asset('2022102410184329134e.png') }}">
     </div>
     @include('pages.components.about-us')
 </section>
@@ -45,7 +48,7 @@
 <section class="section container">
     <div class="text-center">
         <h3>Top Sales Product of SukGarden</h3>
-        <img src="//cdn.img-sys.com/comdata/101528/202210/2022102410184329134e.png" data-src="//cdn.img-sys.com/comdata/101528/202210/2022102410184329134e.png">
+        <img src="{{ asset('2022102410184329134e.png') }}">
     </div>
     <div class="d-flex">
         <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sukgarden077/video/7304505887941463314" data-video-id="7304505887941463314" style="max-width: 605px;min-width: 325px;" > 
@@ -66,7 +69,7 @@
 <section class="section container">
     <div class="text-center">
         <h3>Brand News</h3>
-        <img src="//cdn.img-sys.com/comdata/101528/202210/2022102410184329134e.png" data-src="//cdn.img-sys.com/comdata/101528/202210/2022102410184329134e.png">
+        <img src="{{ asset('2022102410184329134e.png') }}">
     </div>
     @include('pages.components.news')
 </section>

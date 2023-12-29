@@ -7,7 +7,7 @@
         Brand News
     </h3>
     <div>
-        <img src="//cdn.img-sys.com/comdata/101528/202210/2022102410184329134e.png" data-src="//cdn.img-sys.com/comdata/101528/202210/2022102410184329134e.png">
+        <img src="{{ asset('2022102410184329134e.png') }}">
     </div>
 </section>
 
