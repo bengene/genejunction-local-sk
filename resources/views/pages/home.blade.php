@@ -38,7 +38,7 @@
 <section class="section text-center mb-4">
     <h3>Brand Introduction</h3>
     <div>
-        <img src="{{ asset('2022102410184329134e.png') }}">
+        <img src="{{ asset('/images/2022102410184329134e.png') }}">
     </div>
     @include('pages.components.about-us')
 </section>
@@ -48,7 +48,7 @@
 <section class="section container">
     <div class="text-center">
         <h3>Top Sales Product of SukGarden</h3>
-        <img src="{{ asset('2022102410184329134e.png') }}">
+        <img src="{{ asset('/images/2022102410184329134e.png') }}">
     </div>
     <div class="d-flex">
         <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sukgarden077/video/7304505887941463314" data-video-id="7304505887941463314" style="max-width: 605px;min-width: 325px;" > 
@@ -69,7 +69,7 @@
 <section class="section container">
     <div class="text-center">
         <h3>Brand News</h3>
-        <img src="{{ asset('2022102410184329134e.png') }}">
+        <img src="{{ asset('/images/2022102410184329134e.png') }}">
     </div>
     @include('pages.components.news')
 </section>

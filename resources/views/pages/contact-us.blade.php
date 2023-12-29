@@ -9,7 +9,7 @@
         Get in touch with us
     </h3>
     <div>
-        <img src="{{ asset('2022102410184329134e.png') }}">
+        <img src="{{ asset('/images/2022102410184329134e.png') }}">
     </div>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
         <div class="feature col">
