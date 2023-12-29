@@ -19,7 +19,7 @@
     ] as $entity)
     <div class="col-md-6 col-xl-4 mb-5 align-items-stretch">
         <div class="card h-100" href="#!">
-            <img class="card-img-top" src="{{ asset($entity['image']) }}">
+            <img class="card-img-top" src="{{ asset($entity['image']) }}" alt="{{ $entity['title'] }}">
             <div class="card-body">
                 <h5 class="card-title">
                     {{ $entity['title'] }}

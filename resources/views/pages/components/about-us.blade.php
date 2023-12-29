@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <img class="img-fluid" src="/images/202305091800446311051.jpg">
+                <img class="img-fluid" src="/images/202305091800446311051.jpg" alt="Brand launch conference">
             </div>
         </div>
     </div>

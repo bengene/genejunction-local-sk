@@ -21,6 +21,15 @@
                 <img src="{{ asset('images/20230809114317019dc7.jpg') }}" class="d-block w-100" alt="Gu Ai Ling Endorse our brand">
             </div>
             <div class="carousel-item"  data-bs-interval="5000">
+                <h1 class="d-none">
+                    Master FragranceNatural Cleanliness
+                </h1>
+                <h1 class="d-none">
+                    Together with internationalfragrance giantGivaudan, every scentcomes from nature.
+                </h1>
+                <h1 class="d-none">
+                    No harmfulingredients,safe for your family's health
+                </h1>
                 <img src="{{ asset('images/20230918140837d49d44.jpg') }}" class="d-block w-100" alt="essential oil detergent">
             </div>
         </div>
@@ -38,7 +47,7 @@
 <section class="section text-center mb-4">
     <h3>Brand Introduction</h3>
     <div>
-        <img src="{{ asset('/images/2022102410184329134e.png') }}">
+        <img src="{{ asset('/images/2022102410184329134e.png') }}" alt="icon">
     </div>
     @include('pages.components.about-us')
 </section>
@@ -48,7 +57,7 @@
 <section class="section container">
     <div class="text-center">
         <h3>Top Sales Product of SukGarden</h3>
-        <img src="{{ asset('/images/2022102410184329134e.png') }}">
+        <img src="{{ asset('/images/2022102410184329134e.png') }}" alt="icon">
     </div>
     <div class="d-flex">
         <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sukgarden077/video/7304505887941463314" data-video-id="7304505887941463314" style="max-width: 605px;min-width: 325px;" > 
@@ -69,7 +78,7 @@
 <section class="section container">
     <div class="text-center">
         <h3>Brand News</h3>
-        <img src="{{ asset('/images/2022102410184329134e.png') }}">
+        <img src="{{ asset('/images/2022102410184329134e.png') }}" alt="icon">
     </div>
     @include('pages.components.news')
 </section>

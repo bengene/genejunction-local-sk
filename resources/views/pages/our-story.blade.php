@@ -7,7 +7,7 @@
         Our Story
     </h3>
     <div>
-        <img src="{{ asset('/images/2022102410184329134e.png') }}">
+        <img src="{{ asset('/images/2022102410184329134e.png') }}" alt="icon">
     </div>
 </section>
 <section class="pt-2">

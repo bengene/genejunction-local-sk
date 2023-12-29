@@ -7,41 +7,13 @@
         Our Product
     </h3>
     <div>
-        <img src="{{ asset('/images/2022102410184329134e.png') }}">
+        <img src="{{ asset('/images/2022102410184329134e.png') }}" alt="icon">
     </div>
 </section>
+
 <section class="pt-2">
-    <img class="img-fluid" src="{{ asset('/images/product/landing.jpg') }}">
-    {{-- <div class="container">
-        <div class="row g-0">
-            <div class="col-md-4">
-                <div class="overlay-container">
-                    <img class="image" src="{{ asset('/images/product/detergent.jpg') }}">
-                    <div class="overlay">
-                        <div class="text">Laundry Detergent</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
+    <img class="img-fluid" src="{{ asset('/images/product/landing.jpg') }}" alt="detergent product image">
 </section>
-{{-- <section class="container pt-4">
-    <div class="d-flex">
-        <div class="pt-1 pe-4">
-            Filter 
-        </div>
-        <div class="dropdown">
-            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-        </div>
-    </div>
-</section> --}}
 
 <section class="container pt-4">
     <div class="row">
@@ -53,7 +25,7 @@
         </div>
         @foreach($products as $product)
         <div class="col-md-3 py-2">
-            <img class="image" src="{{ asset('/images/product/'.$product['name'].'.jpg') }}">
+            <img class="image" src="{{ asset('/images/product/'.$product['name'].'.jpg') }}" alt="{{ $product['name'] }}">
             <div class="py-2 very-small-text text-center">
                 {{ $product['name'] }}
             </div>
