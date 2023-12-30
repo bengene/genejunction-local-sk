@@ -10,8 +10,8 @@ class LandingPageController extends Controller
     {
         $seo = [
             'page_title' => '',
-            'meta_title' => 'Sukgarden',
-            'meta_desc' => 'SukGarden is the leading brand of ecological home cleaning. Product research and development selected global natural active ingredients, aiming to produce green, healthy, ecological and environmentally friendly cleaning and toiletry products. ',
+            'meta_title' => 'SukGarden is the leading brand of ecological home cleaning',
+            'meta_desc' => 'Product research and development selected global natural active ingredients, aiming to produce green, healthy, ecological and environmentally friendly cleaning and toiletry products. ',
             'meta_image' => asset('/images/2023091815305860bfc6.jpg'),
         ];
 
@@ -22,7 +22,7 @@ class LandingPageController extends Controller
     {
         $seo = [
             'page_title' => 'Our Story',
-            'meta_title' => 'Sukgarden',
+            'meta_title' => 'Our Story',
             'meta_desc' => 'SukGarden is the leading brand of ecological home cleaning. Product research and development selected global natural active ingredients, aiming to produce green, healthy, ecological and environmentally friendly cleaning and toiletry products. ',
             'meta_image' => asset('/images/2023091815305860bfc6.jpg'),
         ];
@@ -34,7 +34,7 @@ class LandingPageController extends Controller
     {
         $seo = [
             'page_title' => 'Our Product',
-            'meta_title' => 'Sukgarden',
+            'meta_title' => 'Our Product',
             'meta_desc' => 'SukGarden is the leading brand of ecological home cleaning. Product research and development selected global natural active ingredients, aiming to produce green, healthy, ecological and environmentally friendly cleaning and toiletry products. ',
             'meta_image' => asset('/images/2023091815305860bfc6.jpg'),
         ];
@@ -46,7 +46,7 @@ class LandingPageController extends Controller
     {
         $seo = [
             'page_title' => 'Contact Us',
-            'meta_title' => 'Sukgarden',
+            'meta_title' => 'Contact Us',
             'meta_desc' => 'SukGarden is the leading brand of ecological home cleaning. Product research and development selected global natural active ingredients, aiming to produce green, healthy, ecological and environmentally friendly cleaning and toiletry products. ',
             'meta_image' => asset('/images/2023091815305860bfc6.jpg'),
         ];
@@ -59,7 +59,7 @@ class LandingPageController extends Controller
         
         $seo = [
             'page_title' => 'Brand News',
-            'meta_title' => 'Sukgarden',
+            'meta_title' => 'Brand News',
             'meta_desc' => 'SukGarden is the leading brand of ecological home cleaning. Product research and development selected global natural active ingredients, aiming to produce green, healthy, ecological and environmentally friendly cleaning and toiletry products. ',
             'meta_image' => asset('/images/2023091815305860bfc6.jpg'),
         ];
