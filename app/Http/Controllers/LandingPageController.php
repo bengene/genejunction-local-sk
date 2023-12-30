@@ -8,10 +8,11 @@ class LandingPageController extends Controller
 {
     public function home()
     {
+        
         $seo = [
             'page_title' => '',
             'meta_title' => 'SukGarden is the leading brand of ecological home cleaning',
-            'meta_desc' => 'Product research and development selected global natural active ingredients, aiming to produce green, healthy, ecological and environmentally friendly cleaning and toiletry products. ',
+            'meta_desc' => 'Product research and development selected global natural active ingredients, aiming to produce green, healthy, ecological and environmentally friendly cleaning and toiletry products.',
             'meta_image' => asset('/images/2023091815305860bfc6.jpg'),
         ];
 
